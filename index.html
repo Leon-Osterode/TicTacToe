@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>TicTacToe</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="script/style.css">      
+    </head>
+    <body style="background-image: url('img/bg.png');">     
+        
+        <script src="script/script.js"></script>
+
+        <table class="main">
+            <tr>
+                <td>
+                    <h1>TicTacToe</h1>
+                    <p>
+                        Select a difficulty:
+                    </p>
+                    <select name="Difficulty" id="diff">
+                        <option value="0">2 player mode</option>
+                        <option value="1">Easy player</option>
+                        <option value="2">Good player</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="gamefield">
+                        <tr class="design">
+                            <td onclick="Game(0)" class="design">
+                                <img src="/img/kreuz.png" alt="Field1" id="1" style="display: none;">
+                            </td>
+                            <td onclick="Game(1)" class="design">
+                                <img src="/img/kreuz.png" alt="Field2" id="2" style="display: none;">
+                            </td>
+                            <td onclick="Game(2)" class="design">
+                                <img src="/img/kreuz.png" alt="Field3" id="3" style="display: none;">
+                            </td>
+                        </tr>
+                        <tr class="design">
+                            <td onclick="Game(3)" class="design">
+                                <img src="/img/kreuz.png" alt="Field4" id="4" style="display: none;">
+                            </td>
+                            <td onclick="Game(4)" class="design">
+                                <img src="/img/kreuz.png" alt="Field5" id="5" style="display: none;">
+                            </td>
+                            <td onclick="Game(5)" class="design">
+                                <img src="/img/kreuz.png" alt="Field6" id="6" style="display: none;">
+                            </td>
+                        </tr>
+                        <tr class="design">
+                            <td onclick="Game(6)" class="design">
+                                <img src="/img/kreuz.png" alt="Field7" id="7" style="display: none;">
+                            </td>
+                            <td onclick="Game(7)" class="design">
+                                <img src="/img/kreuz.png" alt="Field8" id="8" style="display: none;">
+                            </td>
+                            <td onclick="Game(8)" class="design">
+                                <img src="/img/kreuz.png" alt="Field9" id="9" style="display: none;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="bar">
+                        <tr>
+                            <td class="bar_left">
+                                <p id="info">
+                                    To play, simply click in a field :)
+                                </p>
+                            </td>
+                            <td  onclick="reset()" class="bar_right">
+                             <img src="img/reload.png" alt="" id="reload">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
