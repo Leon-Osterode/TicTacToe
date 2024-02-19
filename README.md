@@ -2,6 +2,7 @@
 
 This is a working TicTacToe game in JavaScript.
 It was created as small school Project by my self to get in Java Script and learn it!
+The game may contain errors and was developed without any experience before the start of development and could therefore get a revision.
 
 It has 3 different "game modes":
 
